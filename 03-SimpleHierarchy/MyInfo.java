@@ -5,10 +5,12 @@ class Vehicle {
         this.brand = brand;
     }
     
+    
     public void start() {
         System.out.println(brand + " กำลังสตาร์ท...");
     }
 }
+
 
 class Car extends Vehicle {
     public Car(String brand) {

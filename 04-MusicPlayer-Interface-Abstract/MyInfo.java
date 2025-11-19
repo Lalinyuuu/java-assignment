@@ -26,6 +26,7 @@ class CDPlayer extends MusicDevice implements Playable {
         System.out.println("เชื่อมต่อแผ่น CD...");
     }
     
+    
     @Override
     public void play() {
         System.out.println("กำลังเล่นเพลงจาก CD");
