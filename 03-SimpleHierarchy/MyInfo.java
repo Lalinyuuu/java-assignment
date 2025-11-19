@@ -1,4 +1,3 @@
-// Base class Vehicle
 class Vehicle {
     protected String brand;
     
@@ -11,7 +10,6 @@ class Vehicle {
     }
 }
 
-// Derived class Car ที่สืบทอดจาก Vehicle
 class Car extends Vehicle {
     public Car(String brand) {
         super(brand);
@@ -22,15 +20,10 @@ class Car extends Vehicle {
     }
 }
 
-// Main class
-class Main {
+public class MyInfo {
     public static void main(String[] args) {
-        // สร้าง object ของ Car
         Car myCar = new Car("Toyota");
-        
-        // เรียกทั้ง start() และ drive()
         myCar.start();
         myCar.drive();
     }
 }
-

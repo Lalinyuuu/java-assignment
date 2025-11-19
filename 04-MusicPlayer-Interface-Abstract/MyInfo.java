@@ -1,9 +1,7 @@
-// Interface Playable
 interface Playable {
     void play();
 }
 
-// Abstract class MusicDevice
 abstract class MusicDevice {
     protected String brand;
     
@@ -18,7 +16,6 @@ abstract class MusicDevice {
     public abstract void connect();
 }
 
-// Class CDPlayer
 class CDPlayer extends MusicDevice implements Playable {
     public CDPlayer(String brand) {
         super(brand);
@@ -35,7 +32,6 @@ class CDPlayer extends MusicDevice implements Playable {
     }
 }
 
-// Class Smartphone
 class Smartphone extends MusicDevice implements Playable {
     public Smartphone(String brand) {
         super(brand);
@@ -52,14 +48,11 @@ class Smartphone extends MusicDevice implements Playable {
     }
 }
 
-// Main class
-class Main {
+public class MyInfo {
     public static void main(String[] args) {
-        // สร้าง object CDPlayer และ Smartphone
         CDPlayer cdPlayer = new CDPlayer("Sony");
         Smartphone smartphone = new Smartphone("Samsung");
         
-        // เรียก method connect(), info(), และ play() ของ CDPlayer
         System.out.println("=== CD Player ===");
         cdPlayer.connect();
         cdPlayer.info();
@@ -67,11 +60,9 @@ class Main {
         
         System.out.println();
         
-        // เรียก method connect(), info(), และ play() ของ Smartphone
         System.out.println("=== Smartphone ===");
         smartphone.connect();
         smartphone.info();
         smartphone.play();
     }
 }
-
